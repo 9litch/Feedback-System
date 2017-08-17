@@ -38,7 +38,7 @@ final internal class FeedbackView: NSObject {
     internal let informationLabel: UILabel = {
         let label = UILabel()
         label.textColor = UIColor.white
-		label.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.semibold)
+		label.font = UIFont.systemFont(ofSize: 16, weight: UIFontWeightSemibold)
         return label
     }()
     
@@ -81,7 +81,7 @@ final internal class FeedbackView: NSObject {
 			informationLabel.frame = CGRect(x: 72, y: 17, width: UIScreen.main.bounds.width - 128, height: 24)
 			informationLabel.text = feedbackLabel
 			informationLabel.textColor = feedbackLabelColor
-			informationLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFont.Weight.bold)
+			informationLabel.font = UIFont.systemFont(ofSize: 18, weight: UIFontWeightBold)
 			
             //  #### Timer to Hide it
             Timer.scheduledTimer(timeInterval: durationOnScreen, target: self, selector: #selector(dismissConfimationPopup), userInfo: nil, repeats: false)
